@@ -11,21 +11,18 @@
   <body>
     <div class="container">
       <div class="jumbotron" class="row">
-
+        <h1>Portland Venue Database</h1>
       </div>
       <!-- jumbotron row1 -->
       <div class="row">
         <div class="col-sm-3" id="left-column">
           <ul>
-            <li>Crystal Ballroom</li>
-            <li>Dante's</li>
-            <li>Wonder Ballroom</li>
-            <li>Doug Fir Lounge</li>
+
           </ul>
         </div>
         <!-- left-column -->
-        <div class="col-sm-9">
-          <h3>Crystal Ballroom</h3>
+        <div class="col-sm-9" id="venue-title">
+          <h2>Crystal Ballroom</h2>
         </div>
         <!-- venue-title -->
         <div class="col-sm-4 object-column">
@@ -60,11 +57,13 @@ Here's our write-up of renowned talent Bernadette Bascom, shown here with her An
               <h3>
                 This is where you can add venues that you've discovered to our list.
               </h3>
-              <input id="venue-name"class="form-control" type="text" name="name-of-venue" value="Name of Venue"><br>
+              <div>
+                <input id="venue-name" class="form-control" type="text" name="name-of-venue" value="Name of Venue"><br>
+              </div>
               <p>
                 What part of town is it?
               </p>
-              <select class="neighbourhood form-control"><br>
+              <select id="neighbourhood" class="form-control"><br>
                 <option value="NE">
                   North-East
                 </option>
@@ -101,7 +100,11 @@ Here's our write-up of renowned talent Bernadette Bascom, shown here with her An
                 <input type="radio" name="venue-rating" value="5">5-Most excellent!</label><br>
               </div>
               <!-- radio -->
-              <input type="button" name="name" value="">
+              <div class="form-group">
+                <p>Anything else you'd like to add:</p>
+                <input id="experience" class="form-control" type="text" value="Tell us about your experience at the venue, the venue's history, which bands you've seen, whatever you'd like!">
+              </div>
+              <button class="btn" type="submit" name="button">Submit</button>
             </div>
           </form>
         </div>

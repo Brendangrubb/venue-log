@@ -1,6 +1,29 @@
-#left-column {
-  padding-bottom: 100%;
-}
+
 select {
   margin-bottom: 10px;
+}
+h2, h1 {
+
+  text-align: center;
+
+}
+#object-column {
+  padding-top: 10px;
+}
+
+
+#venue-title {
+  border-bottom: 10px, black;
+  border-style: dotted;
+}
+#left-column {
+  padding-top: 10px;
+  padding-bottom: 100%;
+}
+#right-most-column {
+  padding-top: 10px;
+}
+
+.experience {
+  height: 200px;
 }
