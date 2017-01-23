@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cool Venues</title>
+    <link rel="stylesheet" type="text/css"href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css"href="css/styles.css" media="screen">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" class="row">
+
+      </div>
+      <!-- jumbotron row1 -->
+      <div class="row">
+        <div class="col-sm-3" id="left-column">
+          <ul>
+            <li>Crystal Ballroom</li>
+            <li>Dante's</li>
+            <li>Wonder Ballroom</li>
+            <li>Doug Fir Lounge</li>
+          </ul>
+        </div>
+        <!-- left-column -->
+        <div class="col-sm-9">
+          <h3>Crystal Ballroom</h3>
+        </div>
+        <!-- venue-title -->
+        <div class="col-sm-4 object-column">
+          <ul>
+            <li>djladsjf</li>
+            <li>djladsjf</li>
+            <li>djladsjf</li>
+            <li>djladsjf</li>
+            <li>djladsjf</li>
+            <li>djladsjf</li>
+            <li>djladsjf</li>
+          </ul>
+        </div>
+        <!-- object-column -->
+        <div class="col-sm-5 right-most-column"  id="display-column">
+
+          <p>
+            About Us
+  Sure, brothers Mike and Brian McMenamin may have started out with one humble pub back in 1974, but that's not all we do. Along with brewing beer, distilling spirits, opening hotels and vinting wine, our focus has expanded through the years to include a little bit about this, that and the other. Because why not? Who is Bernadette Bascom? Students' music teacher and vocal coach, gospel/R&B singer, Vegas stage performer, Emmy Award winner, pal to Stevie Wonder....
+
+High among her many accomplishments is the Music Project at Secondary Academy for Success (SAS), an amazing program initially launched for musicians at what's now McMenamins Anderson School. Bascom was recruited to lend her vocal talents and inspiration to the project. It has been a wild success with the students from the get-go, and continues to this day to bolster their confidence and help them reach higher musical heights. This week, the Woodinville Weekly ran an article called "After a Decade, Bernadette Bascom's Music Project Sings Stronger Than Ever" (link to the full article below, which includes a cool photo of Bascom with her Emmy and Wonder).
+
+Here's our write-up of renowned talent Bernadette Bascom, shown here with her Anderson School Room 315 portrait by artist Patty Forte Linna.
+
+
+          </p>
+        </div>
+        <!-- display-column -->
+        <div class="col-sm-9 right-column"  id="form-column">
+          <form id="venue-form">
+            <div class="form-group">
+              <h3>
+                This is where you can add venues that you've discovered to our list.
+              </h3>
+              <input id="venue-name"class="form-control" type="text" name="name-of-venue" value="Name of Venue"><br>
+              <p>
+                What part of town is it?
+              </p>
+              <select class="neighbourhood form-control"><br>
+                <option value="NE">
+                  North-East
+                </option>
+                <option value="SE">
+                  South-East
+                </option>
+                <option value="NW">
+                  North-West
+                </option>
+                <option value="SW">
+                  South-West
+                </option>
+                <option value="North">
+                  North
+                </option>
+              </select>
+              <p>
+                What kind of music could you find here?
+              </p>
+              <input id="genres" class="form-control" type="text" name="genres" value="Genres commonly found in venue..."><br>
+              <div class="radio" id="rating">
+                <p>
+                  How much would you recommend this spot?
+                </p>
+                <label>
+                <input type="radio" name="venue-rating" value="1">1-Not so much.</label><br>
+                <label>
+                <input type="radio" name="venue-rating" value="2">2-Meh.</label><br>
+                <label>
+                <input type="radio" name="venue-rating" value="3">3-Alright.</label><br>
+                <label>
+                <input type="radio" name="venue-rating" value="4">4-Pretty decent.</label><br>
+                <label>
+                <input type="radio" name="venue-rating" value="5">5-Most excellent!</label><br>
+              </div>
+              <!-- radio -->
+              <input type="button" name="name" value="">
+            </div>
+          </form>
+        </div>
+        <!-- form-column -->
+      </div>
+      <!-- second row -->
+    </div>
+    <!-- container -->
+  </body>
+</html>
