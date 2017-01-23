@@ -10,12 +10,14 @@
 //   experience:
 // }
 
-function VenueMaker (venueName, neighbourhood, genre, rating, experience) {
+function VenueMaker (venueName, neighbourhood, genre, rating, experience, upcomingEvent, upcomingEventDate) {
   this.venueName = venueName;
   this.neighbourhood = neighbourhood;
   this.genre = genre;
   this.rating = rating;
   this.experience = experience;
+  this.upcomingEvent = upcomingEvent;
+  this.upcomingEventDate = upcomingEventDate;
 }
 
 var vNInput;
@@ -43,8 +45,10 @@ $(document).ready(function() {
     gInput = $("#genres").val();
     rInput = $("input:radio[name=venue-rating]:checked").val();
     eInput = $("#experience").val();
+    eVInput = $("#upcoming-event").val();
+    eVDInput = $("#event-date").val();
 
-    var newVenue = new VenueMaker(vNInput, nInput, gInput, rInput, eInput);
+    var newVenue = new VenueMaker(vNInput, nInput, gInput, rInput, eInput, eVInput, eVDInput);
 
     $("#left-column").append("<li class='venue-link'>" + newVenue.venueName + "</li>");
 
@@ -54,6 +58,9 @@ $(document).ready(function() {
       $("#nOutput").append(newVenue.neighbourhood);
       $("#gOutput").append(newVenue.genre);
       $("#rOutput").append(newVenue.rating);
+      $("#eVOutput").append(newVenue.upcomingEvent);
+      $("#eVDOutput").append(newVenue.upcomingEventDate);
+
       $("#display-column").text(newVenue.experience);
     });
 

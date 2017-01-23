@@ -29,6 +29,8 @@
             <li id="nOutput">Quadrant: </li>
             <li id="gOutput">Genres: </li>
             <li id="rOutput">Rating: </li>
+            <li id="eVOutput">Upcoming Event: </li>
+            <li id="eVDOutput">Upcoming Event Date: </li>
         </div>
         <!-- object-column -->
         <div class="col-sm-5 right-most-column"  id="display-column">
@@ -42,7 +44,7 @@
                 This is where you can add venues that you've discovered to our list.
               </h3>
               <div>
-                <input id="venue-name" class="form-control" type="text" name="name-of-venue" value="Name of Venue"><br>
+                <input id="venue-name" class="form-control" type="text" name="name-of-venue" placeholder="Name of Venue"><br>
               </div>
               <p>
                 What part of town is it?
@@ -67,7 +69,7 @@
               <p>
                 What kind of music could you find here?
               </p>
-              <input id="genres" class="form-control" type="text" name="genres" value="Genres commonly found in venue..."><br>
+              <input id="genres" class="form-control" type="text" name="genres" placeholder="Genres commonly found in venue..."><br>
               <div class="radio" id="rating">
                 <p>
                   How much would you recommend this spot?
@@ -86,7 +88,13 @@
               <!-- radio -->
               <div class="form-group">
                 <p>Anything else you'd like to add:</p>
-                <input id="experience" class="form-control" type="text" value="Tell us about your experience at the venue, the venue's history, which bands you've seen, whatever you'd like!">
+                <input id="experience" class="form-control" type="text" placeholder="Tell us about your experience at the venue, the venue's history, which bands you've seen, whatever you'd like!">
+              </div>
+              <div class="form-group">
+                <label> Name of upcoming show:</label>
+                <input id="upcoming-event" type="text" placeholder="What band, etc.">
+                <label> Date of upcoming show:
+                <input id="event-date" type="date"></label>
               </div>
               <button class="btn" type="submit" name="button">Submit</button>
             </div>
