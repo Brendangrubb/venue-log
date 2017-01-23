@@ -9,12 +9,14 @@ h2, h1 {
 }
 #object-column {
   padding-top: 10px;
+  display: none;
 }
 
 
 #venue-title {
   border-bottom: 10px, black;
   border-style: dotted;
+  min-height: 70px;
 }
 #left-column {
   padding-top: 10px;
@@ -26,4 +28,13 @@ h2, h1 {
 
 .experience {
   height: 200px;
+}
+
+.venue-link {
+  cursor: pointer;
+  color: blue;
+}
+
+.venue-link:hover {
+  text-decoration: underline;
 }

@@ -41,15 +41,26 @@ $(document).ready(function() {
     vNInput = $("#venue-name").val();
     nInput = $("#neighbourhood").val();
     gInput = $("#genres").val();
-    rInput = $("#rating").val();
+    rInput = $("input:radio[name=venue-rating]:checked").val();
     eInput = $("#experience").val();
-
 
     var newVenue = new VenueMaker(vNInput, nInput, gInput, rInput, eInput);
 
-    $("#left-column").append("<li>" + newVenue.venueName + "</li>");
+    $("#left-column").append("<li class='venue-link'>" + newVenue.venueName + "</li>");
 
+    $(".venue-link").last().click(function() {
+      $("#object-column").show();
+      $("#venue-title h2").text(newVenue.venueName);
+      $("#nOutput").append(newVenue.neighbourhood);
+      $("#gOutput").append(newVenue.genre);
+      $("#rOutput").append(newVenue.rating);
+      $("#display-column").text(newVenue.experience);
+    });
 
   });
 
 });
+
+
+// $("input: checkbox[name = venue-rating]:checked").each(function() {
+// });
